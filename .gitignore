@@ -1,0 +1,4 @@
+node_modules/
+.env
+my-theme/
+.DS_Store

@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "description": "Example palette registry for theme-designer. Author here, then copy-on-update to dashboard/themes/ or a house kit registry.",
+    "version": "1.0.0",
+    "schema": {
+      "palettes.<id>": {
+        "name": "Display name",
+        "colors": "Six-color set: cyan, purple, pink, indigo, blue, teal",
+        "primary": "Brand primary (maps to --brand-primary)",
+        "secondary": "Brand secondary",
+        "accent": "Brand accent (maps to --brand-accent / --dash-accent)",
+        "background": "Dark base (--brand-bg / --dash-bg)",
+        "glow": "Primary glow rgba or hex",
+        "aesthetic": "One-line brand voice",
+        "cssFile": "Suggested output filename when copied to dashboard/themes/"
+      }
+    },
+    "nameCollisions": {
+      "plasma-green": "Dashboard industrial green #00e879 — NOT Synagraphic Plasma Drift editor theme #e050a0 (pink). Document ids; do not conflate."
+    }
+  },
+  "palettes": {
+    "dusk-companion": {
+      "name": "Dusk Companion (example)",
+      "primary": "#f472b6",
+      "secondary": "#fb923c",
+      "accent": "#e879f9",
+      "background": "#120814",
+      "colors": {
+        "cyan": "#f9a8d4",
+        "purple": "#c084fc",
+        "pink": "#f472b6",
+        "indigo": "#e879f9",
+        "blue": "#f472b6",
+        "teal": "#2dd4bf"
+      },
+      "glow": "rgba(244,114,182,0.16)",
+      "aesthetic": "Pink dusk — rose primary, sunset coral secondary, magenta glow on plum-black surfaces. Example only; replace when cloning.",
+      "cssFile": "dusk-companion.css",
+      "teachingNote": "Public OSS dashboard ships this id in profiles/pets. Your clone should use a new id unless you are intentionally matching that profile."
+    }
+  }
+}

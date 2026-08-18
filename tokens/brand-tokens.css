@@ -1,0 +1,84 @@
+/* ============================================================
+   brand-tokens.css — theme-designer teaching starter
+   EXAMPLE palette: pink dusk (dusk-companion family).
+   Clones: replace every --brand-* / surface hex with YOUR brand.
+   Copy this :root block into dashboard/themes/your-id.css or inline <style>.
+   ============================================================ */
+
+:root {
+  /* ── Brand roles (author here first) ── */
+  --brand-primary:     #f472b6;
+  --brand-primary-rgb: 244, 114, 182;
+  --brand-secondary:   #fb923c;
+  --brand-accent:      #e879f9;
+  --brand-accent-2:    #fb923c;
+  --brand-bg:          #120814;
+  --brand-bg-2:        #1c101c;
+  --brand-text:        #f5e6f0;
+  --brand-dim:         #c4a0b4;
+  --brand-glow:        rgba(244, 114, 182, 0.16);
+
+  /* ── Glass / surface chrome ── */
+  --glass-surface:     rgba(244, 114, 182, 0.05);
+  --glass-surface-2:   rgba(244, 114, 182, 0.10);
+  --glass-border:      rgba(244, 114, 182, 0.14);
+  --glass-border-strong: rgba(244, 114, 182, 0.30);
+  --glass-blur:        20px;
+
+  /* ── Radii ── */
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --card-radius: var(--radius-md);
+
+  /* ── Dashboard aliases (--dash-* consumed by standalone HTML chrome) ── */
+  --dash-accent:   var(--brand-accent);
+  --dash-accent-2: var(--brand-accent-2);
+  --dash-bg:       var(--brand-bg);
+
+  /* ── Semantic aliases (match dashboard theme files) ── */
+  --bg:        var(--brand-bg);
+  --bg2:       var(--brand-bg-2);
+  --surface:   var(--glass-surface);
+  --surface2:  var(--glass-surface-2);
+  --border:    var(--glass-border);
+  --border2:   var(--glass-border-strong);
+  --text:      var(--brand-text);
+  --dim:       var(--brand-dim);
+  --bright:    #fff7fb;
+  --primary:     var(--brand-primary);
+  --primary-rgb: var(--brand-primary-rgb);
+  --secondary:   var(--brand-secondary);
+  --accent:      var(--brand-accent);
+  --glow:        var(--brand-glow);
+  --blur:        var(--glass-blur);
+
+  /* ── Typography (optional — dashboards often set these per profile) ── */
+  --mono:    'JetBrains Mono', 'Cascadia Code', monospace;
+  --sans:    'Outfit', 'Segoe UI', system-ui, sans-serif;
+  --heading: 'Outfit', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Light mode stub — extend or delete per product */
+[data-theme="light"] {
+  --brand-bg:    #fdf2f8;
+  --brand-bg-2:  #fce7f3;
+  --brand-text:  #4a1840;
+  --brand-dim:   #9d5b88;
+  --brand-glow:  rgba(244, 114, 182, 0.10);
+  --glass-surface:   rgba(255, 255, 255, 0.88);
+  --glass-surface-2: rgba(255, 255, 255, 0.97);
+  --glass-border:    rgba(190, 24, 93, 0.10);
+  --glass-border-strong: rgba(190, 24, 93, 0.20);
+}
+
+/*
+  Breakpoints (Bootstrap-aligned — use LITERAL px in @media; var() is invalid):
+
+    xs  max-width: 389.98px
+    sm  max-width: 575.98px
+    md  max-width: 767.98px
+    lg  max-width: 991.98px
+
+  @media (max-width: 767.98px) { ... }
+*/

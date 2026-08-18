@@ -1,0 +1,31 @@
+{
+  "id": "default",
+  "name": "Your Product (example)",
+  "status": "draft",
+  "description": "Starter profile manifest. Replace with your product name, theme id, and section map when you scaffold a real dashboard.",
+  "theme": "dusk-companion",
+  "render": "profiles/default/default.html",
+  "exampleData": "example-data.json",
+  "dataInjection": {
+    "scriptId": "app-data"
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "data": "summary → hero stats and status strip"
+    },
+    {
+      "id": "metrics",
+      "title": "Key Metrics",
+      "data": "metrics[] → cards or chart series"
+    },
+    {
+      "id": "actions",
+      "title": "Actions",
+      "data": "actions[] → links, reminders, or checklist items"
+    }
+  ],
+  "dataSources": ["manual JSON (data.json)"],
+  "_note": "Split into a new profiles/<id>/ folder when this product gets its own HTML renderer, example data, and theme id. See profiles/README.md."
+}
