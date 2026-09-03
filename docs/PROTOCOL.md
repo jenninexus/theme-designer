@@ -35,7 +35,7 @@
 | Jen DJ | Phosphor (`@phosphor-icons/react`) | Swap the mixer to Font Awesome |
 | pdf-designer print | Inline a few SVGs | Weigh the webfont into a PDF |
 
-House local trees (not packaged here): SEGOPC `<local-fontawesome-folder>` · BEETHOVEN `\\BEETHOVEN\p\www\fontawesome`.
+House FA trees stay **off this public repo** (CDN, a local copy you already own, or `react-icons/fa6`). See [`icons/README.md`](../icons/README.md).
 
 ---
 

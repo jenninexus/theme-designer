@@ -1,92 +1,53 @@
+<div align="center">
+
 # theme-designer
 
-**A kit for making your kit.**
+![HTML](https://img.shields.io/badge/HTML-5-e34f26?style=flat-square&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-tokens-1572b6?style=flat-square&logo=css3&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-palettes-cb3837?style=flat-square&logo=json&logoColor=white)
+![MIT](https://img.shields.io/badge/license-MIT-00e879?style=flat-square)
+![Dependencies](https://img.shields.io/badge/dependencies-zero--deps-39ff8c?style=flat-square)
+![Mode](https://img.shields.io/badge/mode-local--first-00e5ff?style=flat-square)
 
-`theme-designer` is a public teaching starter — not a third production theme SSOT. It shows how to author **your own** brand tokens, palette JSON, and profile manifests, then copy them into the projects you ship.
+**A kit for making your kit.** ✨
 
-House SSOTs stay where they belong:
+Public teaching starter: author brand tokens, one palette JSON, a profile stub, and a tiny icon
+subset — then **copy** them into the projects you ship. Not a production theme SSOT.
 
-| Repo | Role |
-|------|------|
-| [jenninexus/syna-theme-kit](https://github.com/monofinitystudio/syna-theme-kit) | React · Dockview · Synagen accents — palettes, skins, typed tokens (house SSOT; private) |
-| www-theme-kit | PHP · Bootstrap · standalone HTML `--dash-*` chrome (**private infra** — not a public GitHub product) |
-| [jenninexus/syn-themes](https://github.com/jenninexus/syn-themes) | VS Code / Cursor extension — palette **mirror** only |
-| [jenninexus/dashboard](https://github.com/jenninexus/dashboard) | Public OSS seed — copies tokens into `themes/*.css` |
-
-Use **theme-designer** when you want a sandbox to learn the pattern before touching a real repo.
-
----
-
-## What you can do with this repo
-
-**As a brand-kit lab** — edit `tokens/brand-tokens.css` and `palettes/example-palettes.json` until the colors feel like *your* product, not ours.
-
-**As a dashboard theme designer** — copy the finished `:root` block into a [dashboard](https://github.com/jenninexus/dashboard) profile or scaffolder output. Override `--brand-accent` (and friends) in one place; the dashboard chrome picks it up via `--dash-accent` aliases.
-
-**As inspiration, not a dependency** — study how www-theme-kit structures standalone HTML `--dash-*` chrome and how syna-theme-kit structures palette JSON + skin families. Do **not** `@import` private kit paths from here. **Copy-on-update** when you promote a palette to production.
+</div>
 
 ---
 
-## Quick start
+Clone, open [`preview.html`](preview.html), edit `tokens/brand-tokens.css`, copy the `:root` block
+into your app. No build, no `.env`, no private kit paths.
 
-1. **Clone or copy this folder** (no build step, no secrets, public examples only).
-
-2. **Open the demo** — `npx --yes http-server -p 5191 -c-1 -o /preview.html .` (any static server). Confirm tokens, `profiles/default.json`, and the icon row.
-
-3. **Edit the example palette** in `tokens/brand-tokens.css`. Replace the pink dusk example values with your brand. Start with `--brand-accent` — everything else can follow.
-
-4. **Copy into a dashboard** — paste the `:root` block from `tokens/brand-tokens.css` into your dashboard HTML `<style>` or into `themes/your-theme.css` in a [dashboard](https://github.com/jenninexus/dashboard) checkout:
-
-   ```css
-   /* In dashboard/themes/my-brand.css — after copying tokens/brand-tokens.css :root */
-   :root {
-     --brand-accent: #your-hex;   /* your override */
-     --dash-accent: var(--brand-accent);
-   }
-   ```
-
-5. **Optional** — mirror palette metadata in `palettes/example-palettes.json` and a profile stub in `profiles/default.json` so your team knows which theme id maps to which product surface.
-
-6. **Icons** — copy SVGs from [`icons/`](icons/README.md) or use CDN / `react-icons/fa6` in an app. Do not vendor the full Font Awesome folder.
-
-7. **Read the protocol** — [`docs/PROTOCOL.md`](docs/PROTOCOL.md) explains author-here → copy-on-update. [`docs/ROADMAP.md`](docs/ROADMAP.md) lists recommended edits for the three house kits (for maintainers, not learners).
-
----
-
-## Folder map
-
-The **repo root is the starter kit.** Do not add `kit/` or `theme-kit/` — that would look like a fourth production SSOT competing with the private house kits.
-
-```
-theme-designer/                  ← public product = helper + this starter
-├── preview.html                 ← local demo (tokens + default profile + icons)
-├── tokens/brand-tokens.css      ← start here — :root custom properties
-├── palettes/example-palettes.json ← one example palette + schema notes
-├── profiles/
-│   ├── default.json             ← starter profile manifest
-│   └── README.md                ← when to split a profile
-├── icons/                       ← curated Font Awesome Free SVGs (not the full 6.7.2 tree)
-└── docs/
-    ├── PROTOCOL.md              ← copy-on-update rules + stack table
-    └── ROADMAP.md               ← phases + house-kit recommendations
+```bash
+git clone https://github.com/jenninexus/theme-designer.git
+cd theme-designer
+npx --yes http-server -p 5191 -c-1 -o /preview.html .
 ```
 
-Private house kits stay **outside** this repo (www-theme-kit · syna-theme-kit). They are network-private infra — never nested here, never `@import`ed from a public seed.
+| Start here | |
+|---|---|
+| [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md) | Steps, folder map, dashboard paste |
+| [`docs/PROTOCOL.md`](docs/PROTOCOL.md) | Copy-on-update · icon sets · no `@import` of house kits |
+| [`icons/README.md`](icons/README.md) | Curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0) — not the full web tree |
+| [`AGENTS.md`](AGENTS.md) | Thin agent map |
+
+Sister public seeds: [dashboard](https://github.com/jenninexus/dashboard) · [syn-themes](https://github.com/jenninexus/syn-themes) (editor swatches, downstream only).
+
+MIT — use, fork, customize. See [`LICENSE`](LICENSE).
 
 ---
 
-## Rules
+<div align="center">
 
-- **MIT license** — see [`LICENSE`](LICENSE).
-- **No secrets** — example data only; never commit `.env`, private paths, or household finance hex tables.
-- **No `@import` of kit paths** — production repos vendored-copy tokens; they do not link back to private infra at runtime.
-- **Name collisions matter** — dashboard `plasma-green` (`#00e879`) ≠ Synagraphic Plasma Drift (`#e050a0`). Document your ids; do not reuse confusing names.
+If this starter helped you ship a brand kit: ✨
 
----
+[Star this repo](https://github.com/jenninexus/theme-designer) · [jenninexus.com/links](https://jenninexus.com/links) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus)
 
-## Related projects
+Suggested tip **$3 or $5** — same as the other public seeds; it does not unlock extra files.
 
-- [jenninexus/dashboard](https://github.com/jenninexus/dashboard) — profile-based static dashboards (SEO, finances, health, pets)
-- [jenninexus/syn-themes](https://github.com/jenninexus/syn-themes) — cyberpunk editor themes; storefront swatches mirror kit palettes
+Made with 💚 by [Jenni](https://github.com/jenninexus) at [Monofinity Studio](https://github.com/monofinitystudio)
 
-When your palette is ready for production, promote it through the appropriate house SSOT — not by growing this teaching repo into a fourth kit.
+</div>

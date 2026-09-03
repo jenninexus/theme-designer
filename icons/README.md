@@ -2,11 +2,9 @@
 
 This folder is a **tiny, attributed SVG set** for the public teaching demo. It is **not** the full Font Awesome tree.
 
-House apps on SEGOPC still use the shared local tree:
+House PHP/Bootstrap apps still use a local FA 6.7.2 tree **or** CDN. React hosts often use `react-icons/fa6`. **Jen DJ keeps Phosphor.** Do **not** vendor `fontawesome-free-6.7.2-web` into this repo or the house kits.
 
-`<local-fontawesome-folder>`
-
-Do **not** vendor that whole folder into this repo, www-theme-kit, or syna-theme-kit.
+Recommended sets: [`docs/PROTOCOL.md`](../docs/PROTOCOL.md) § Recommended icon sets.
 
 ## What is here
 
