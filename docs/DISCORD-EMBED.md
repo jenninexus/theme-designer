@@ -5,7 +5,9 @@ is only the teaching bridge: copy one hex into a bot’s `embedBar` / `embedBarI
 
 Do **not** add Discord manifests under `profiles/` — those files are **dashboard**
 product surfaces (`id` + `theme` + `render` + `sections`). A bot theme is a
-different JSON shape and lives in the Bot Seed repo (`profiles/discord-bot.example.json`).
+different JSON shape and lives in the Bot Seed product
+(`profiles/discord-bot.example.json`) when that seed is public. Until then, do
+not add a GitHub clone URL from this page.
 
 ## Copy recipe
 
@@ -20,7 +22,7 @@ parseInt("5865F2", 16) // 5793266 — example blurple
    `assets.example.json`). Bots never `@import` this repo.
 
 Anatomy (1×1 thumb, 16×9 hero, flat bar, no brown): documented in Bot Seed
-`docs/STYLE-SPEC.md` when that seed is cloned. House production tokens stay in
+`docs/STYLE-SPEC.md` when that seed is public. House production tokens stay in
 private `www-theme-kit/profiles/discord-bot.json` — not a clone dependency.
 
 ## Related

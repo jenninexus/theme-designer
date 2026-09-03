@@ -31,6 +31,7 @@ npx --yes http-server -p 5191 -c-1 -o /preview.html .
 |---|---|
 | [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md) | Steps, folder map, dashboard paste |
 | [`docs/PROTOCOL.md`](docs/PROTOCOL.md) | Copy-on-update · icon sets · no `@import` of house kits |
+| [`docs/DISCORD-EMBED.md`](docs/DISCORD-EMBED.md) | Optional embed-bar hex copy — not a dashboard profile |
 | [`icons/README.md`](icons/README.md) | Curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0) — not the full web tree |
 | [`AGENTS.md`](AGENTS.md) | Thin agent map |
 

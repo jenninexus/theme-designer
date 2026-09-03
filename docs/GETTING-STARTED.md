@@ -40,7 +40,7 @@ theme-designer/                  ← public product = helper + this starter
 ├── palettes/example-palettes.json
 ├── profiles/default.json
 ├── icons/                       ← curated Font Awesome Free SVGs (not the full 6.7.2 tree)
-└── docs/                        ← PROTOCOL · this file · ROADMAP
+└── docs/                        ← PROTOCOL · this file · ROADMAP · DISCORD-EMBED
 ```
 
 ## What this repo is for
