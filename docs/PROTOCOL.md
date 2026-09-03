@@ -22,7 +22,7 @@
 | **www-theme-kit** | PHP · Bootstrap · standalone HTML | `--dash-*` chrome, `dashboard-palettes.json`, dashboard profile map | Production target for static dashboard chrome. Learn `--dash-accent` aliases here; promote by copy. |
 | **syn-themes** | VS Code / Cursor extension | `themes/*.json` editor colors; `palettes/all-palettes.json` **mirror** | Downstream consumer only. Never author palette hexes here first. |
 | **dashboard** | Static HTML seed (OSS) | `themes/*.css`, profile manifests, scaffolder | Public landing zone for dashboard palettes. Copy `brand-tokens.css` → `themes/your-id.css`. |
-| **theme-designer** (this repo) | Teaching starter | Example tokens + one palette + profile stub | Sandbox only. Not a runtime dependency for any shipping app. |
+| **theme-designer** (this repo) | Teaching starter | Example tokens + one palette + profile stub + icon subset | Sandbox only. **Repo root is the kit** — no nested `theme-kit/` folder. Not a runtime dependency for any shipping app. |
 
 ---
 
@@ -35,6 +35,7 @@ When promoting a palette id (example: `my-brand`):
 - [ ] Palette metadata added to the **correct** house registry (www-theme-kit and/or syna-theme-kit — not both unless intentionally shared)
 - [ ] Profile manifest `theme` field matches the CSS file id
 - [ ] Name collision doc updated if your id resembles an existing theme (`plasma-green` ≠ Plasma Drift)
+- [ ] Icons: copy only the SVGs you need from `icons/` (CC BY 4.0 FA Free) — never the full Font Awesome tree
 - [ ] No secrets, no private paths, no `@import` back to theme-designer in production HTML
 
 ---
@@ -69,3 +70,5 @@ Add to syna-theme-kit `docs/PROTOCOL.md` (one line):
 > Public learners: [jenninexus/theme-designer](https://github.com/jenninexus/theme-designer) — teaching starter for brand kits; not a production dependency.
 
 Do not wire theme-designer into build graphs, submodules, or runtime imports.
+
+Layout rule for maintainers: keep the public starter **flat at repo root**. Adding `theme-designer/kit/` or `theme-kit/` would duplicate the product name and invite copying private www/syna kits into the public tree. Those kits stay in their own private repos (`www-theme-kit`, `syna-theme-kit`).

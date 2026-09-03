@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>theme-designer — brand kit lab</title>
+  <link rel="stylesheet" href="tokens/brand-tokens.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: var(--sans);
+      background: var(--brand-bg);
+      color: var(--brand-text);
+      line-height: 1.5;
+    }
+    a { color: var(--brand-accent); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      flex-wrap: wrap; margin-bottom: 1.75rem;
+    }
+    h1 { font-family: var(--heading); font-size: 1.65rem; margin: 0; }
+    .lede { color: var(--brand-dim); max-width: 42rem; }
+    .icon {
+      display: inline-block; width: 1.25rem; height: 1.25rem; vertical-align: -0.15em;
+      background: currentColor;
+      -webkit-mask: var(--icon) center / contain no-repeat;
+      mask: var(--icon) center / contain no-repeat;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      min-height: 44px; padding: 0 0.9rem; border-radius: var(--radius-sm);
+      border: 1px solid var(--glass-border-strong);
+      background: var(--glass-surface-2);
+      color: var(--brand-text); cursor: pointer; font: inherit;
+      user-select: none; -webkit-user-select: none;
+    }
+    .btn:hover { border-color: var(--brand-accent); }
+    .btn-accent { background: var(--brand-accent); color: #1a0814; border-color: transparent; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+    .card {
+      background: var(--glass-surface);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.1rem;
+      backdrop-filter: blur(var(--glass-blur));
+    }
+    .card h2 { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--brand-dim); margin: 0 0 0.75rem; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .swatch {
+      width: 2.5rem; height: 2.5rem; border-radius: 8px;
+      border: 1px solid var(--glass-border-strong);
+    }
+    .icon-row { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+    .icon-chip {
+      display: flex; flex-direction: column; align-items: center; gap: 0.35rem;
+      min-width: 4.5rem; color: var(--brand-accent);
+      font-size: 0.7rem; color: var(--brand-dim);
+    }
+    .icon-chip .icon { color: var(--brand-accent); width: 1.5rem; height: 1.5rem; }
+    code { font-family: var(--mono); font-size: 0.85em; }
+    footer { margin-top: 2rem; color: var(--brand-dim); font-size: 0.9rem; }
+    @media (max-width: 575.98px) {
+      .wrap { padding: 1rem 0.9rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Your brand kit lab</h1>
+        <p class="lede">Edit <code>tokens/brand-tokens.css</code> and <code>profiles/default.json</code>. This page is the demo — not a production SSOT. Private house kits stay in <code>www-theme-kit</code> / <code>syna-theme-kit</code>.</p>
+      </div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+        <button class="btn" type="button" aria-label="Menu">
+          <span class="icon" style="--icon:url('icons/bars.svg')" aria-hidden="true"></span>
+          Menu
+        </button>
+        <button class="btn btn-accent" type="button">
+          <span class="icon" style="--icon:url('icons/palette.svg')" aria-hidden="true"></span>
+          dusk-companion
+        </button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Default profile</h2>
+        <p id="profile-name">Loading <code>profiles/default.json</code>…</p>
+        <p id="profile-theme"></p>
+      </section>
+      <section class="card">
+        <h2>Tokens</h2>
+        <div class="swatches" aria-label="Brand swatches">
+          <div class="swatch" style="background:var(--brand-primary)" title="primary"></div>
+          <div class="swatch" style="background:var(--brand-secondary)" title="secondary"></div>
+          <div class="swatch" style="background:var(--brand-accent)" title="accent"></div>
+          <div class="swatch" style="background:var(--brand-bg-2)" title="surface"></div>
+        </div>
+        <p style="margin:0.75rem 0 0;font-size:0.9rem;color:var(--brand-dim)">Aliases <code>--dash-accent</code> follow <code>--brand-accent</code>.</p>
+      </section>
+      <section class="card">
+        <h2>Icons (FA Free subset)</h2>
+        <div class="icon-row">
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/bars.svg')"></span>menu</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/xmark.svg')"></span>close</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/magnifying-glass.svg')"></span>search</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/gear.svg')"></span>settings</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/sliders.svg')"></span>filters</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/download.svg')"></span>export</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/star.svg')"></span>pin</div>
+          <div class="icon-chip"><span class="icon" style="--icon:url('icons/circle-half-stroke.svg')"></span>theme</div>
+        </div>
+        <p style="margin:0.75rem 0 0;font-size:0.85rem">CC BY 4.0 Font Awesome Free 6.7.2 — see <a href="icons/README.md">icons/README.md</a>. Do not vendor the full FA tree.</p>
+      </section>
+    </div>
+
+    <footer>
+      Copy-on-update into your app. Never <code>@import</code> a private kit path.
+      Protocol: <a href="docs/PROTOCOL.md">docs/PROTOCOL.md</a>
+    </footer>
+  </div>
+  <script>
+    fetch("profiles/default.json")
+      .then((r) => r.json())
+      .then((p) => {
+        document.getElementById("profile-name").textContent = p.name + " (" + p.id + ")";
+        document.getElementById("profile-theme").innerHTML = "Theme id: <code>" + p.theme + "</code> — " + (p.description || "");
+      })
+      .catch(() => {
+        document.getElementById("profile-name").textContent = "Open this folder via a local static server so fetch() can read profiles/default.json.";
+      });
+  </script>
+</body>
+</html>

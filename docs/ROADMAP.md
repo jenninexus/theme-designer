@@ -13,12 +13,15 @@ Ship the minimum viable teaching surface:
 - `tokens/brand-tokens.css` — editable `:root` with `--brand-*`, `--glass-*`, radii, `--dash-accent` aliases
 - `palettes/example-palettes.json` — one documented example palette (`dusk-companion`)
 - `profiles/default.json` + `profiles/README.md` — profile manifest pattern
+- `icons/` — curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0; not the full tree)
+- `preview.html` — tokens + default profile + icon row (static; no build)
 - `docs/PROTOCOL.md` — copy-on-update contract
 - Public examples only; MIT; no private infra paths
+- **Layout:** repo root *is* the kit. No `kit/` / `theme-kit/` nest. House kits stay private siblings.
 
 ### Phase 2 — Preview and copy tooling (later)
 
-- **Tiny HTML previewer** — open a local page that loads `brand-tokens.css` and renders swatches + sample dashboard chrome (collapse card, stat tile, accent button). No build chain.
+- **Richer previewer** — `preview.html` already shows swatches + icons; add sample dashboard chrome (collapse card, stat tile, accent button) without a build chain.
 - **`scripts/copy-to-project.mjs`** — optional helper that copies `tokens/` + `palettes/` into a target dashboard or static HTML folder with a dated comment header (`/* copied from theme-designer @ … */`).
 - **Example 6-color palettes schema** — formalize the `colors { cyan, purple, pink, indigo, blue, teal }` block used by www-theme-kit and dashboard alternates, with validation notes in JSON Schema or a small lint script.
 
