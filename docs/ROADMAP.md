@@ -17,7 +17,7 @@ Ship the minimum viable teaching surface:
 - `preview.html` — tokens + default profile + icon row (static; no build)
 - `docs/PROTOCOL.md` — copy-on-update contract
 - `docs/GETTING-STARTED.md` — clone path + folder map
-- `docs/DISCORD-EMBED.md` — optional embed-bar hex copy (not a `profiles/` dashboard manifest; no Bot Seed GitHub URL until that repo exists)
+- `docs/DISCORD-EMBED.md` — optional embed-bar hex copy (not a `profiles/` dashboard manifest; Bot Seed: [jenninexus/bot-seed](https://github.com/jenninexus/bot-seed))
 - Public examples only; MIT; no private infra paths
 - **Layout:** repo root *is* the kit. No `kit/` / `theme-kit/` nest. House kits stay private siblings.
 

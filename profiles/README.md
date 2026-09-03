@@ -15,7 +15,7 @@ A **profile** ties together four things:
 
 `profiles/*.json` here describe **dashboards** (`theme` + `render` + `sections`).
 Do not add a `discord-bot` dashboard profile. Discord embed tokens belong in a
-separate **Bot Seed** product (GitHub not public yet). Teaching bridge:
+separate **[Bot Seed](https://github.com/jenninexus/bot-seed)** product. Teaching bridge:
 [`docs/DISCORD-EMBED.md`](../docs/DISCORD-EMBED.md).
 
 ## Keep one profile when

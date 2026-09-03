@@ -23,7 +23,7 @@
 | **syn-themes** | VS Code / Cursor extension | `themes/*.json` editor colors; `palettes/all-palettes.json` **mirror** | Downstream consumer only. Never author palette hexes here first. |
 | **dashboard** | Static HTML seed (OSS) | `themes/*.css`, profile manifests, scaffolder | Public landing zone for dashboard palettes. Copy `brand-tokens.css` → `themes/your-id.css`. |
 | **theme-designer** (this repo) | Teaching starter | Example tokens + one palette + profile stub + icon subset | Sandbox only. **Repo root is the kit** — no nested `theme-kit/` folder. Not a runtime dependency for any shipping app. |
-| **bot-seed** (planned public) | discord.js community bot | `embedBar` / `embedBarInt` in `assets.json` | Copy `--brand-accent` only. See [`DISCORD-EMBED.md`](DISCORD-EMBED.md). Not a `profiles/*.json` dashboard manifest. |
+| **bot-seed** ([public](https://github.com/jenninexus/bot-seed)) | discord.js community bot | `embedBar` / `embedBarInt` in `assets.json` | Copy `--brand-accent` only. See [`DISCORD-EMBED.md`](DISCORD-EMBED.md). Not a `profiles/*.json` dashboard manifest. |
 
 ## Recommended icon sets
 
@@ -85,5 +85,9 @@ Add to syna-theme-kit `docs/PROTOCOL.md` (one line):
 > Public learners: [jenninexus/theme-designer](https://github.com/jenninexus/theme-designer) — teaching starter for brand kits; not a production dependency.
 
 Do not wire theme-designer into build graphs, submodules, or runtime imports.
+
+Studio packaging (store, tip) is not this repo — maintainers use the local
+product-design hub (`/products` · `SEED-FAMILY.md`). Bot Seed clone:
+[jenninexus/bot-seed](https://github.com/jenninexus/bot-seed).
 
 Layout rule for maintainers: keep the public starter **flat at repo root**. Adding `theme-designer/kit/` or `theme-kit/` would duplicate the product name and invite copying private www/syna kits into the public tree. Those kits stay in their own private repos (`www-theme-kit`, `syna-theme-kit`).

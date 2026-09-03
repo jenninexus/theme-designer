@@ -7,3 +7,4 @@ Teaching starter only. **Law:** [`docs/PROTOCOL.md`](docs/PROTOCOL.md). **How-to
 - Discord: copy `--brand-accent` hex only ([`docs/DISCORD-EMBED.md`](docs/DISCORD-EMBED.md)). Do not add `profiles/discord-bot.json`.
 - Icons: curated FA Free SVGs in `icons/` (CC BY 4.0). House PHP sites may use the local FA 6.7.2 tree or CDN; React hosts often `react-icons/fa6`; **Jen DJ keeps Phosphor**. Never vendor `fontawesome-free-6.7.2-web`.
 - Do not grow this repo into a fourth production SSOT. Do not flip other kits public without an explicit yes from the owner.
+- **Packaging (studio hub):** product-design `/products` · `product-design/docs/SEED-FAMILY.md` · `product-design/docs/THEME-DESIGNER.md`. Bot Seed clone: [jenninexus/bot-seed](https://github.com/jenninexus/bot-seed).
