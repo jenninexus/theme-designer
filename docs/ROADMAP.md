@@ -16,6 +16,7 @@ Ship the minimum viable teaching surface:
 - `icons/` — curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0; not the full tree)
 - `preview.html` — tokens + default profile + icon row (static; no build)
 - `docs/PROTOCOL.md` — copy-on-update contract
+- `docs/GETTING-STARTED.md` — clone path + folder map
 - Public examples only; MIT; no private infra paths
 - **Layout:** repo root *is* the kit. No `kit/` / `theme-kit/` nest. House kits stay private siblings.
 
@@ -28,6 +29,7 @@ Ship the minimum viable teaching surface:
 ### Phase 3 — Curriculum (later)
 
 - Walkthrough docs: “brand kit → dashboard theme → editor swatch mirror”
+- Optional: brand kit → Discord `embedBar` (see [`DISCORD-EMBED.md`](DISCORD-EMBED.md); Bot Seed is a separate product)
 - Side-by-side diffs showing syna skin families vs standalone `--dash-*` chrome
 - Checklist for naming collisions (`plasma-green` vs Plasma Drift, etc.)
 

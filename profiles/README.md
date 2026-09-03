@@ -11,6 +11,13 @@ A **profile** ties together four things:
 
 ---
 
+## Discord bots are a different profile kind
+
+`profiles/*.json` here describe **dashboards** (`theme` + `render` + `sections`).
+Do not add a `discord-bot` dashboard profile. Discord embed tokens belong in a
+separate **Bot Seed** product (GitHub not public yet). Teaching bridge:
+[`docs/DISCORD-EMBED.md`](../docs/DISCORD-EMBED.md).
+
 ## Keep one profile when
 
 - You are still picking accent colors and have not chosen panel layout

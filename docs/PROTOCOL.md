@@ -23,6 +23,19 @@
 | **syn-themes** | VS Code / Cursor extension | `themes/*.json` editor colors; `palettes/all-palettes.json` **mirror** | Downstream consumer only. Never author palette hexes here first. |
 | **dashboard** | Static HTML seed (OSS) | `themes/*.css`, profile manifests, scaffolder | Public landing zone for dashboard palettes. Copy `brand-tokens.css` → `themes/your-id.css`. |
 | **theme-designer** (this repo) | Teaching starter | Example tokens + one palette + profile stub + icon subset | Sandbox only. **Repo root is the kit** — no nested `theme-kit/` folder. Not a runtime dependency for any shipping app. |
+| **bot-seed** (planned public) | discord.js community bot | `embedBar` / `embedBarInt` in `assets.json` | Copy `--brand-accent` only. See [`DISCORD-EMBED.md`](DISCORD-EMBED.md). Not a `profiles/*.json` dashboard manifest. |
+
+## Recommended icon sets
+
+| Surface | Use | Do **not** |
+|---------|-----|------------|
+| **This repo** (public demo) | Curated FA Free 6.7.2 SVGs in [`icons/`](../icons/README.md) (CC BY 4.0) | Vendor `fontawesome-free-6.7.2-web` |
+| PHP / Bootstrap www | Local FA 6.7.2 tree or CDN (house machines) | Copy the full tree into a kit |
+| React hosts (most) | `react-icons/fa6` or a copied SVG subset | Mix FA + Phosphor in one product |
+| Jen DJ | Phosphor (`@phosphor-icons/react`) | Swap the mixer to Font Awesome |
+| pdf-designer print | Inline a few SVGs | Weigh the webfont into a PDF |
+
+House local trees (not packaged here): SEGOPC `<local-fontawesome-folder>` · BEETHOVEN `\\BEETHOVEN\p\www\fontawesome`.
 
 ---
 
@@ -37,6 +50,8 @@ When promoting a palette id (example: `my-brand`):
 - [ ] Name collision doc updated if your id resembles an existing theme (`plasma-green` ≠ Plasma Drift)
 - [ ] Icons: copy only the SVGs you need from `icons/` (CC BY 4.0 FA Free) — never the full Font Awesome tree
 - [ ] No secrets, no private paths, no `@import` back to theme-designer in production HTML
+
+**Maintainer visibility:** this teaching repo is already public. Never flip `www-theme-kit` or `syna-theme-kit` public without an explicit yes from the owner in-chat.
 
 ---
 
