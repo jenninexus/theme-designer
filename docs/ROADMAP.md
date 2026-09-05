@@ -85,3 +85,9 @@ These are **not** blockers for theme-designer Phase 1. They are the user-asked m
 - A home for real client brand hex tables — clones replace the example `dusk-companion` palette locally
 
 When a palette graduates, it moves **out** via copy-on-update into the correct house kit or a project’s `themes/` folder — not by expanding this repo’s scope.
+
+## Store placement (JenniNexus)
+
+Featured on [jenninexus.com/products#seed-family](https://jenninexus.com/products#seed-family)
+until a mini-devlog blog exists. Do not add a `/products` catalog widget before that
+post. Detail: [`PRODUCT.md`](PRODUCT.md).

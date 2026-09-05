@@ -56,6 +56,7 @@ When the palette is ready for a house product, promote it through the matching p
 ## Related
 
 - [`PROTOCOL.md`](PROTOCOL.md) — copy-on-update contract + stack table + icon sets
+- [`PRODUCT.md`](PRODUCT.md) — clone promise + store placement (seed-family until mini-devlog)
 - [`ROADMAP.md`](ROADMAP.md) — phases (maintainers)
 - [`DISCORD-EMBED.md`](DISCORD-EMBED.md) — optional embed-bar hex copy
 - [`icons/README.md`](../icons/README.md) — FA Free subset (CC BY 4.0)
