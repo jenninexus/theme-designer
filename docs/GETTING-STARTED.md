@@ -2,7 +2,7 @@
 
 Clone this repo, edit the example tokens, copy the `:root` block into *your* project. There is no build step and no secrets.
 
-House production kits (`www-theme-kit`, `syna-theme-kit`) stay **outside** this repo. Do not add `kit/` or `theme-kit/` here — the **repo root is the starter**.
+The **repo root is the starter**. Keep project assets and configuration in the checkout that ships them.
 
 ## Open the demo
 
@@ -18,8 +18,8 @@ Any static server works. Confirm tokens, `profiles/default.json`, and the icon r
 2. Optional: mirror metadata in `palettes/example-palettes.json` and `profiles/default.json`.
 3. Copy the finished `:root` into your app (dashboard `themes/your-theme.css`, host tokens, etc.).
 4. Alias dashboard chrome: `--dash-accent: var(--brand-accent);`
-5. Icons: copy SVGs from [`icons/`](../icons/README.md) **or** use CDN / `react-icons/fa6`. Jen DJ keeps Phosphor. Never vendor the full Font Awesome tree.
-6. Law: [`PROTOCOL.md`](PROTOCOL.md) (copy-on-update, no `@import` of private kits).
+5. Icons: copy SVGs from [`icons/`](../icons/README.md) **or** use CDN / `react-icons/fa6`. Never vendor the full Font Awesome tree.
+6. Law: [`PROTOCOL.md`](PROTOCOL.md) (copy-on-update).
 
 Dashboard paste example:
 
@@ -47,11 +47,11 @@ theme-designer/                  ← public product = helper + this starter
 
 - **Brand-kit lab** — edit until the colors feel like *your* product.
 - **Dashboard theme designer** — copy `:root` into [dashboard](https://github.com/jenninexus/dashboard) `themes/*.css`.
-- **Inspiration, not a dependency** — study the pattern; copy-on-update when you promote. Do not `@import` private kit paths.
+- **Inspiration, not a dependency** — study the pattern; copy-on-update when you promote. Keep runtime styles in the consuming project.
 
 Name collisions matter: dashboard `plasma-green` (`#00e879`) ≠ Synagraphic Plasma Drift (`#e050a0`). Document your ids.
 
-When the palette is ready for a house product, promote it through the matching private kit — do not grow this teaching repo into a fourth production SSOT.
+When a palette is ready for production, add it to the design system that owns the consuming project's tokens.
 
 ## Related
 

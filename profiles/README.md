@@ -1,5 +1,7 @@
 # Profiles — when to split
 
+Keep project-specific profile notes in the checkout that uses them.
+
 A **profile** ties together four things:
 
 1. **Identity** — `id`, `name`, `description`
@@ -42,14 +44,9 @@ separate **[Bot Seed](https://github.com/jenninexus/bot-seed)** product. Teachin
 
 ---
 
-## House kit rule (do not merge)
+## Keep profiles scoped to their product
 
-- **syna-theme-kit** `profiles/dashboard.json` — Syna overlay, live React consumers
-- **www-theme-kit** `profiles/dashboard.json` — OSS seed map for static HTML dashboards
-
-These answer different questions. Cross-link in docs; **do not merge** the JSON files.
-
----
+A static dashboard profile and an application overlay can define different settings. Keep each profile with the project that reads it.
 
 ## Checklist for a new profile folder
 

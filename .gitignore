@@ -5,3 +5,14 @@ my-theme/
 *.code-workspace
 !*.code-workspace.example
 !theme-designer.code-workspace.example
+
+# Local editor settings and session notes
+.vscode/
+.cursor/
+.claude/
+.agents/
+.codex/
+.idea/
+Plans/
+dev-log-*.yaml
+dev-chat.md

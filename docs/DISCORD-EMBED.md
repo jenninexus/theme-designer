@@ -23,8 +23,7 @@ parseInt("5865F2", 16) // 5793266 — example blurple
 
 Anatomy (1×1 thumb, 16×9 hero, flat bar, no brown):
 [Bot Seed `docs/STYLE-SPEC.md`](https://github.com/jenninexus/bot-seed/blob/master/docs/STYLE-SPEC.md).
-House production tokens stay in private `www-theme-kit/profiles/discord-bot.json`
-— not a clone dependency.
+The consuming project owns its production tokens.
 
 ## Related
 

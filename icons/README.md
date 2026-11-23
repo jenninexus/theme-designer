@@ -2,7 +2,7 @@
 
 This folder is a **tiny, attributed SVG set** for the public teaching demo. It is **not** the full Font Awesome tree.
 
-House PHP/Bootstrap apps still use a local FA 6.7.2 tree **or** CDN. React hosts often use `react-icons/fa6`. **Jen DJ keeps Phosphor.** Do **not** vendor `fontawesome-free-6.7.2-web` into this repo or the house kits.
+PHP and Bootstrap apps can use Font Awesome via a CDN or a local subset. React apps can use `react-icons/fa6`.
 
 Recommended sets: [`docs/PROTOCOL.md`](../docs/PROTOCOL.md) § Recommended icon sets.
 
@@ -32,6 +32,6 @@ Keep the comment block inside each SVG when you copy an icon into your project.
 
 1. **Static HTML** — mask or `<img>` as in [`../preview.html`](../preview.html) (add `alt` or `aria-hidden` + a text label).
 2. **PHP / Bootstrap** — link FA CSS from a CDN or your own subset; size webfont icons with `font-size`, never `width`/`height` on `i.fa-solid` (that clips `::before`).
-3. **React** — `react-icons/fa6` (`FaBars`, `FaXmark`, …) or keep these SVGs. Mixer apps (Jen DJ) may use Phosphor instead — pick **one** family per product.
+3. **React** — `react-icons/fa6` (`FaBars`, `FaXmark`, …) or keep these SVGs. Use one icon family per product.
 
-Never `@import` a private kit path for icons.
+Serve local icon files from the project that uses them.

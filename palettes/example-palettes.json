@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "description": "Example palette registry for theme-designer. Author here, then copy-on-update to dashboard/themes/ or a house kit registry.",
+    "description": "Example palette registry for theme-designer. Author here, then copy-on-update to dashboard/themes/ or the consuming project’s theme registry.",
     "version": "1.0.0",
     "schema": {
       "palettes.<id>": {
