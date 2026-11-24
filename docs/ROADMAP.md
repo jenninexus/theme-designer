@@ -6,9 +6,9 @@ This roadmap tracks the public palette and token authoring starter.
 
 ## Phases (this repo)
 
-### Phase 1 — Teaching starter (current)
+### Phase 1 — Teaching starter (shipped)
 
-Ship the minimum viable teaching surface:
+The published starter includes:
 
 - `tokens/brand-tokens.css` — editable `:root` with `--brand-*`, `--glass-*`, radii, `--dash-accent` aliases
 - `palettes/example-palettes.json` — one documented example palette (`dusk-companion`)
