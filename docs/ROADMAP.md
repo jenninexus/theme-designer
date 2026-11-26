@@ -13,7 +13,7 @@ The published starter includes:
 - `tokens/brand-tokens.css` — editable `:root` with `--brand-*`, `--glass-*`, radii, `--dash-accent` aliases
 - `palettes/example-palettes.json` — one documented example palette (`dusk-companion`)
 - `profiles/default.json` + `profiles/README.md` — profile manifest pattern
-- `icons/` — curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0; not the full tree)
+- `icons/` — recommended icon libraries
 - `preview.html` — tokens + default profile + icon row (static; no build)
 - `docs/PROTOCOL.md` — copy-on-update contract
 - `docs/GETTING-STARTED.md` — clone path + folder map

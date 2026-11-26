@@ -26,7 +26,7 @@
 
 | Surface | Use | Do **not** |
 |---------|-----|------------|
-| **This repo** (public demo) | Curated FA Free 6.7.2 SVGs in [`icons/`](../icons/README.md) (CC BY 4.0) | Vendor `fontawesome-free-6.7.2-web` |
+| **This repo** (public demo) | Three platform marks in the preview. See the [icon guide](../icons/README.md). | Vendor `fontawesome-free-6.7.2-web` |
 | PHP / Bootstrap www | Local FA 6.7.2 tree or CDN | Copy the full tree into a kit |
 | React hosts (most) | `react-icons/fa6` or a copied SVG subset | Mix FA + Phosphor in one product |
 
@@ -43,7 +43,7 @@ When promoting a palette id (example: `my-brand`):
 - [ ] Register palette metadata in the design system that owns the running theme.
 - [ ] Profile manifest `theme` field matches the CSS file id
 - [ ] Name collision doc updated if your id resembles an existing theme (`plasma-green` ≠ Plasma Drift)
-- [ ] Icons: copy only the SVGs you need from `icons/` (CC BY 4.0 FA Free) — never the full Font Awesome tree
+- [ ] Icons: select only the necessary SVGs and preserve their attribution
 - [ ] No secrets, no private paths, no `@import` back to theme-designer in production HTML
 
 ---

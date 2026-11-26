@@ -7,7 +7,7 @@ Teaching starter only. **Law:** [`docs/PROTOCOL.md`](docs/PROTOCOL.md). **How-to
 - Repo **root is the kit** — no nested `kit/` or `theme-kit/`.
 - Copy-on-update into the user’s project. Keep the target project's styles self-contained.
 - Discord: copy `--brand-accent` hex only ([`docs/DISCORD-EMBED.md`](docs/DISCORD-EMBED.md)). Do not add `profiles/discord-bot.json`.
-- Icons: curated FA Free SVGs in `icons/` (CC BY 4.0). Use the icon library already in your project. Never vendor `fontawesome-free-6.7.2-web`.
+- Icons: the preview uses three small platform marks. See `icons/README.md` for libraries to use in your project.
 - Keep this repo focused on reusable teaching examples.
 
 ## Public examples (tracked)

@@ -1,54 +1,31 @@
 <div align="center">
 
-# theme-designer
+# Theme Designer ✨
 
-![HTML](https://img.shields.io/badge/HTML-5-e34f26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-tokens-1572b6?style=flat-square&logo=css3&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-palettes-cb3837?style=flat-square&logo=json&logoColor=white)
-![MIT](https://img.shields.io/badge/license-MIT-00e879?style=flat-square)
-![Dependencies](https://img.shields.io/badge/dependencies-zero--deps-39ff8c?style=flat-square)
-![Mode](https://img.shields.io/badge/mode-local--first-00e5ff?style=flat-square)
+![HTML](https://img.shields.io/badge/HTML-static-9a3520?style=flat-square&labelColor=1a1a2e)
+![CSS](https://img.shields.io/badge/CSS-tokens-205697?style=flat-square&labelColor=1a1a2e)
+![JSON](https://img.shields.io/badge/JSON-palettes-6b3db5?style=flat-square&labelColor=1a1a2e)
+[![MIT](https://img.shields.io/badge/license-MIT-6b3db5?style=flat-square&labelColor=1a1a2e)](LICENSE)
 
-**A kit for making your kit.** ✨
-
-Public teaching starter: author brand tokens, one palette JSON, a profile stub, and a tiny icon
-subset — then **copy** them into the projects you ship. Not a production theme SSOT.
+**A small starting point for your brand palette.**
 
 </div>
 
----
+Open [`preview.html`](preview.html) in a browser after cloning. Compare six light and dark brand examples and download a JSON palette to customize. Try it in [PDF Designer](https://github.com/jenninexus/pdf-designer). Save the JSON in its local `brands/` folder, refresh the Library, and choose it under **Preview palette**.
 
-Clone, open [`preview.html`](preview.html), edit `tokens/brand-tokens.css`, copy the `:root` block
-into your app. The starter runs as static files.
+[Quick start](docs/GETTING-STARTED.md) · [Simple Icons](https://simpleicons.org/) · [Lucide](https://lucide.dev/) · [Font Awesome](https://fontawesome.com/)
 
-```bash
-git clone https://github.com/jenninexus/theme-designer.git
-cd theme-designer
-npx --yes http-server -p 5191 -c-1 -o /preview.html .
-```
-
-| Start here | |
-|---|---|
-| [`docs/GETTING-STARTED.md`](docs/GETTING-STARTED.md) | Steps, folder map, dashboard paste |
-| [`docs/PRODUCT.md`](docs/PRODUCT.md) | Clone promise + JN store placement |
-| [`docs/PROTOCOL.md`](docs/PROTOCOL.md) | Copy-on-update · icon sets · portable runtime paths |
-| [`docs/DISCORD-EMBED.md`](docs/DISCORD-EMBED.md) | Optional embed-bar hex copy — not a dashboard profile |
-| [`icons/README.md`](icons/README.md) | Curated Font Awesome Free 6.7.2 SVGs (CC BY 4.0) — not the full web tree |
-| [`AGENTS.md`](AGENTS.md) | Thin agent map |
-
-Sister public seeds: [dashboard](https://github.com/jenninexus/dashboard) · [syn-themes](https://github.com/jenninexus/syn-themes) (editor swatches, downstream only).
-
-MIT — use, fork, customize. See [`LICENSE`](LICENSE).
+Sister seeds: [dashboard](https://github.com/jenninexus/dashboard) · [syn-themes](https://github.com/jenninexus/syn-themes) (editor swatches, downstream only).
 
 ---
 
 <div align="center">
 
-If this starter helped you ship a brand kit: ✨
+If you enjoyed this repo: ✨
 
-[Star this repo](https://github.com/jenninexus/theme-designer) · [jenninexus.com/links](https://jenninexus.com/links) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus)
+[Star this repo](https://github.com/jenninexus/theme-designer) · [Links](https://jenninexus.com/links) · [Patreon](https://www.patreon.com/c/JenniNexus) · [PayPal](https://paypal.me/jenninexus)
 
-Suggested tip **$3 or $5** — same as the other public seeds; it does not unlock extra files.
+Optional tip **$3 or $5**.
 
 Made with 💚 by [Jenni](https://github.com/jenninexus) at [Monofinity Studio](https://github.com/monofinitystudio)
 
