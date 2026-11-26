@@ -12,6 +12,10 @@ h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.2rem); letter-spacing: -.045em; }
 h2, h3, p { margin: 0; }
 header p, footer { color: #b0bbd0; }
 a { color: #99deef; }
+.views { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.views a { display:inline-flex; align-items:center; min-height:36px; padding:0 12px; border:1px solid #545870; border-radius:999px; text-decoration:none; }
+.views a:is(:hover, :focus-visible) { background:#242a42; }
+.views [aria-current] { background:#242a42; color:#edf0fa; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 425px), 1fr)); gap: 16px; margin: 25px 0; }
 .card { --harmony: linear-gradient(90deg,var(--a),var(--b),var(--c)); position: relative; min-width: 0; overflow: hidden; padding: 14px; background: #191b2b; border: 1px solid #363b54; border-radius: 17px; }
 .card::before { content: ""; position: absolute; inset: 0 0 auto; height: 2px; background: var(--harmony); }
@@ -42,6 +46,10 @@ footer { font-size: .86rem; }
   <header><h1>Theme Designer</h1>
     <p>Compare light and dark brand examples, then download a palette to make your own.</p>
     <p>Inspired by the best of <a href="https://github.com/jenninexus/syn-themes">Syn Themes</a>. Try a download in <a href="https://github.com/jenninexus/pdf-designer">PDF Designer</a>.</p>
+    <nav class="views" aria-label="Theme Designer views">
+      <a href="#examples" aria-current="page">Palettes</a>
+      <a href="docs/seed-network/index.html?focus=theme-designer&amp;from=theme">Seed network</a>
+    </nav>
   </header>
   <div class="grid" id="examples"></div>
   <footer>Social marks illustrate platform colors. Find project icons at <a href="https://simpleicons.org/">Simple Icons</a>, <a href="https://lucide.dev/">Lucide</a>, or <a href="https://fontawesome.com/">Font Awesome</a>.</footer>

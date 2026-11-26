@@ -15,6 +15,8 @@ Open [`preview.html`](preview.html) in a browser after cloning. Compare six ligh
 
 [Quick start](docs/GETTING-STARTED.md) · [Simple Icons](https://simpleicons.org/) · [Lucide](https://lucide.dev/) · [Font Awesome](https://fontawesome.com/)
 
+See how Theme Designer palettes connect to PDF Designer, Dashboard, and Bot Seed in the [public seed network](https://github.com/jenninexus#public-seed-network).
+
 Sister seeds: [dashboard](https://github.com/jenninexus/dashboard) · [syn-themes](https://github.com/jenninexus/syn-themes) (editor swatches, downstream only).
 
 ---
